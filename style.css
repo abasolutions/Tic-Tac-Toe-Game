@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding:0;
+    background: rgb(1,69,92);
+    background: linear-gradient(90deg, rgba(1,69,92,1) 0%, rgba(7,104,133,1) 31%, rgba(162,234,248,1) 100%);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.board-container {
+    width: 460px;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.field  {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(6, 6, 6, 0.3);
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.field:hover {
+    cursor: pointer;
+    background-color: rgba(6, 6, 6, 0.2);
+}
+
+.field2, .field5, .field8 {
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.field4, .field5, .field6 {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+button {
+    width: 130px;
+    height: 50px;
+    background-color: rgb(190, 252, 235);
+    border: rgb(190, 252, 235);
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(87, 182, 157);
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+
